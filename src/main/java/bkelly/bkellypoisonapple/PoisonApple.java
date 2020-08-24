@@ -1,6 +1,6 @@
-package bkelly.tutorial;
+package bkelly.bkellypoisonapple;
 
-import bkelly.tutorial.init.ModItems;
+import bkelly.bkellypoisonapple.init.ModItems;
 
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -14,12 +14,12 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 @Mod("bkellypoisonapple")
-public class Tutorial {
+public class PoisonApple {
 
     public static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "bkellypoisonapple";
 
-    public Tutorial() {
+    public PoisonApple() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
@@ -37,7 +37,7 @@ public class Tutorial {
     private void doClientStuff(final FMLClientSetupEvent event) { }
 
     // Custom ItemGroup TAB
-    public static final ItemGroup TAB = new ItemGroup("tutorialTab") {
+    public static final ItemGroup TAB = new ItemGroup("poisonAppleTab") {
         @Override
         public ItemStack createIcon() {
             return new ItemStack(ModItems.POISON_APPLE.get());

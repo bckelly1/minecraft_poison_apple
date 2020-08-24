@@ -1,6 +1,6 @@
-package bkelly.tutorial.items;
+package bkelly.bkellypoisonapple.items;
 
-import bkelly.tutorial.Tutorial;
+import bkelly.bkellypoisonapple.PoisonApple;
 
 import net.minecraft.item.Food;
 import net.minecraft.item.Item;
@@ -11,7 +11,7 @@ public class PoisonAppleItem extends Item {
 
     public PoisonAppleItem() {
         super(new Properties()
-                .group(Tutorial.TAB)
+                .group(PoisonApple.TAB)
                 .food(new Food.Builder()
                         .hunger(4)
                         .saturation(1.2f)
